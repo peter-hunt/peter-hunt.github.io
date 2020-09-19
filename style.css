@@ -2,13 +2,13 @@ body {
     width: 800px;
     margin: 0px auto;
     color: #3E4349;
-    font: 20px Georgia, serif;
+    font: 32px "Comic Sans MS";
     line-height: 140%;
     background-color: aliceblue;
 }
 
 a {
-    font: 32px "Comic Sans MS";
+    font: "Comic Sans MS";
     color: #9FA1A4;
     line-height: 140%;
     text-decoration: none;
@@ -49,7 +49,13 @@ h3 {
 }
 
 h4 {
-    font: 32px "Comic Sans MS";
+    font: 28px "Comic Sans MS";
+    color: #3E4349;
+    text-align: center;
+}
+
+h5 {
+    font: 24px "Comic Sans MS";
     color: #3E4349;
     text-align: center;
 }
@@ -76,7 +82,6 @@ code {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
     transition-duration: 0.3s;
     cursor: pointer;
     vertical-align: middle
