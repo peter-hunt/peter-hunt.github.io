@@ -7,11 +7,11 @@ body {
     background-color: aliceblue;
 }
 
-a {
+a,
+span {
     font: "Comic Sans MS";
     color: #9FA1A4;
     line-height: 140%;
-    text-decoration: none;
 }
 
 input {
