@@ -1,0 +1,92 @@
+body {
+    width: 800px;
+    margin: 0px auto;
+    color: #3E4349;
+    font: 20px Georgia, serif;
+    line-height: 140%;
+    background-color: aliceblue;
+}
+
+a {
+    font: 32px "Comic Sans MS";
+    color: #9FA1A4;
+    line-height: 140%;
+    text-decoration: none;
+}
+
+input {
+    font: 24px "Comic Sans MS";
+    color: #3E4349;
+    vertical-align: middle;
+}
+
+table,
+th,
+td {
+    border: 1px solid #3E4349;
+    border-collapse: collapse;
+}
+
+h1 {
+    font: 80px "Comic Sans MS";
+    color: #3E4349;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font: 36px Georgia, serif;
+    color: #3E4349;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    font: 36px "Comic Sans MS";
+    color: #3E4349;
+    text-align: center;
+}
+
+h4 {
+    font: 32px "Comic Sans MS";
+    color: #3E4349;
+    text-align: center;
+}
+
+ul,
+p {
+    font: 32px "Comic Sans MS";
+    color: #3E4349;
+}
+
+code {
+    font: Consolas;
+    color: #3E4349;
+    white-space: pre;
+    font-weight: bold;
+}
+
+.button {
+    font: 24px "Comic Sans MS";
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    vertical-align: middle
+}
+
+.get {
+    background-color: #3E4349;
+    color: #FFFFFF;
+}
+
+.get:hover {
+    background-color: #1F2124;
+    color: #FFFFFF;
+}
