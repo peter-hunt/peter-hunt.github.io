@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'CascadiaCode';
     src: url("CascadiaMonoPL.ttf"
-    /*tpa=../assets/CascadiaMonoPL.ttf*/
+    /*tpa=../../assets/CascadiaMonoPL.ttf*/
     ) format("truetype");
 }
 
