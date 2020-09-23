@@ -1,0 +1,13 @@
+{
+    "grammarly.audience": "expert",
+    "grammarly.dialect": "british",
+    "grammarly.domain": "general",
+    "grammarly.emotions": [
+        "friendly",
+        "joyful",
+        "respectful"
+    ],
+    "grammarly.goals": [
+        "convince"
+    ]
+}
