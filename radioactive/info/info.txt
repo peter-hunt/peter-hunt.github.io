@@ -33,7 +33,7 @@ Some of the types of sensitive content is allowed only if you're directly sendin
 
 This includes:
  - Sexual or violent content.
- - Sensitive personal information about other members.
+ - Sensitive personal information about others.
  - Aggressive political content.
 
 
