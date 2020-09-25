@@ -21,6 +21,11 @@ span {
     line-height: 140%;
 }
 
+a.language {
+    font-size: 24px;
+    line-height: normal;
+}
+
 
 /* input {
     font: 24px "Comic Sans MS";
@@ -132,6 +137,11 @@ ul,
 p {
     font: 32px "Comic Sans MS";
     color: #3E4349;
+}
+
+p.language {
+    font-size: 24px;
+    line-height: normal;
 }
 
 code {

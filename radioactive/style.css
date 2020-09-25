@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'CascadiaCode';
     src: url("CascadiaMonoPL.ttf"
-    /*tpa=../assets/CascadiaMonoPL.ttf*/
+    /*tpa=../../assets/CascadiaMonoPL.ttf*/
     ) format("truetype");
 }
 
@@ -19,6 +19,11 @@ span {
     font: "Comic Sans MS";
     color: #9FA1A4;
     line-height: 140%;
+}
+
+a.language {
+    font-size: 24px;
+    line-height: normal;
 }
 
 
@@ -132,6 +137,11 @@ ul,
 p {
     font: 32px "Comic Sans MS";
     color: #3E4349;
+}
+
+p.language {
+    font-size: 24px;
+    line-height: normal;
 }
 
 code {
