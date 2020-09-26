@@ -202,3 +202,9 @@ ul.language {
     background-color: #1F2124;
     color: #FFFFFF;
 }
+
+div.logo {
+    display: inline;
+    color: #eed202;
+    white-space: nowarp;
+}
