@@ -2,82 +2,82 @@
 <html>
 
 <head>
-    <title>Peter's YouTube Downloader</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Peter's YouTube Downloader</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Peter's YouTube Downloader</h1>
+  <h1>Peter's YouTube Downloader</h1>
 
-    <center>
-        <h4>Please put the ID of the video you are downloading at the box below.</h4>
-        <h4><code>"<span title="Exactly 11 characters of a-z, A-Z, 0-9, -, or _">XXXXXXXXXXX</span>"</code> would be the id of
-            <code>"https://www.youtube.com/watch?v=XXXXXXXXXXX"</code>
-        </h4>
+  <center>
+    <h4>Please put the ID of the video you are downloading at the box below.</h4>
+    <h4><code>"<span title="Exactly 11 characters of a-z, A-Z, 0-9, -, or _">XXXXXXXXXXX</span>"</code> would be the id of
+      <code>"https://www.youtube.com/watch?v=XXXXXXXXXXX"</code>
+    </h4>
 
-        <form action="">
-            <div class="input-field">
-                <input id="getVideoId" type="text" style="font: CascadiaCode" required />
-                <label for="getVideoId">Video ID:</label>
-            </div>
-        </form>
+    <form action="">
+      <div class="input-field">
+        <input id="getVideoId" type="text" style="font: CascadiaCode" required />
+        <label for="getVideoId">Video ID:</label>
+      </div>
+    </form>
 
-        <button class="button get" onclick="Get()">Get</button>
-        <br>
+    <button class="button get" onclick="Get()">Get</button>
+    <br>
 
-        <h3 id="alert" style="color: #F7005E"><br></h3>
+    <h3 id="alert" style="color: #F7005E"><br></h3>
 
-        <iframe id="preview" width="800" height="600" src="https://www.youtube.com/embed/"></iframe>
+    <iframe id="preview" width="800" height="600" src="https://www.youtube.com/embed/"></iframe>
 
-        <button class="button get">Download</button>
-        <br>
+    <button class="button get">Download</button>
+    <br>
 
-        <script>
-            function parse_query_string(query) {
-                var vars = query.split("&");
-                var query_string = {};
-                for (var i = 0; i < vars.length; i++) {
-                    var pair = vars[i].split("=");
-                    var key = decodeURIComponent(pair[0]);
-                    var value = decodeURIComponent(pair[1]);
-                    // If first entry with this name
-                    if (typeof query_string[key] === "undefined") {
-                        query_string[key] = decodeURIComponent(value);
-                        // If second entry with this name
-                    } else if (typeof query_string[key] === "string") {
-                        var arr = [query_string[key], decodeURIComponent(value)];
-                        query_string[key] = arr;
-                        // If third or later entry with this name
-                    } else {
-                        query_string[key].push(decodeURIComponent(value));
-                    }
-                }
-                return query_string;
-            }
+    <script>
+      function parse_query_string(query) {
+        var vars = query.split("&");
+        var query_string = {};
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split("=");
+          var key = decodeURIComponent(pair[0]);
+          var value = decodeURIComponent(pair[1]);
+          // If first entry with this name
+          if (typeof query_string[key] === "undefined") {
+            query_string[key] = decodeURIComponent(value);
+            // If second entry with this name
+          } else if (typeof query_string[key] === "string") {
+            var arr = [query_string[key], decodeURIComponent(value)];
+            query_string[key] = arr;
+            // If third or later entry with this name
+          } else {
+            query_string[key].push(decodeURIComponent(value));
+          }
+        }
+        return query_string;
+      }
 
-            var query = window.location.search.substring(1);
-            var query_object = parse_query_string(query);
-            var videoId = query_object.videoId;
-            if (videoId === undefined) {
-                document.getElementById("getVideoId").value = "";
-            } else {
-                document.getElementById("getVideoId").value = videoId;
-            }
+      var query = window.location.search.substring(1);
+      var query_object = parse_query_string(query);
+      var videoId = query_object.videoId;
+      if (videoId === undefined) {
+        document.getElementById("getVideoId").value = "";
+      } else {
+        document.getElementById("getVideoId").value = videoId;
+      }
 
-            document.getElementById("preview").src = "https://www.youtube.com/embed/" + videoId + "?rel=0&fs=0";
+      document.getElementById("preview").src = "https://www.youtube.com/embed/" + videoId + "?rel=0&fs=0";
 
-            function Get() {
-                var videoId = document.getElementById("getVideoId").value;
-                if (videoId.match(/^[A-Za-z\d\-]{11}$/)) {
-                    window.open("youtube-downloader.html?videoId=" + videoId, "_self");
-                    document.getElementById("alert").innerHTML = "";
-                } else {
-                    document.getElementById("alert").innerHTML =
-                        "Invalid Video ID";
-                }
-            }
-        </script>
-    </center>
+      function Get() {
+        var videoId = document.getElementById("getVideoId").value;
+        if (videoId.match(/^[A-Za-z\d\-]{11}$/)) {
+          window.open("youtube-downloader.html?videoId=" + videoId, "_self");
+          document.getElementById("alert").innerHTML = "";
+        } else {
+          document.getElementById("alert").innerHTML =
+            "Invalid Video ID";
+        }
+      }
+    </script>
+  </center>
 </body>
 
 </html>

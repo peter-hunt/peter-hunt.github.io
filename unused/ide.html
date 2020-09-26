@@ -2,37 +2,37 @@
 <html>
 
 <head>
-    <title>Peter's Editor</title>
-    <link rel="stylesheet" href="../style.css">
+  <title>Peter's Editor</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body id="body">
-    <h1>Peter's Editor</h1>
+  <h1>Peter's Editor</h1>
 
-    <textarea style="width: 150px; float: left; font-size: 12; resize: horizontal" id="menu" rows="30" readonly></textarea>
-    <textarea style="width: 640px; float: right; font-size: 24; resize: none" id="code" rows="30"></textarea>
+  <textarea style="width: 150px; float: left; font-size: 12; resize: horizontal" id="menu" rows="30" readonly></textarea>
+  <textarea style="width: 640px; float: right; font-size: 24; resize: none" id="code" rows="30"></textarea>
 
-    <script>
-        var menu = ["example.txt", "__main__.py"];
-        var display = [];
-        menu.forEach(filename => {
-            if (filename.length <= 16) {
-                display.push(filename);
-            } else {
-                display.push(filename.slice(0, 11) + "...");
-            }
-        });
-        document.getElementById("menu").value = display.join("\n");
+  <script>
+    var menu = ["example.txt", "__main__.py"];
+    var display = [];
+    menu.forEach(filename => {
+      if (filename.length <= 16) {
+        display.push(filename);
+      } else {
+        display.push(filename.slice(0, 11) + "...");
+      }
+    });
+    document.getElementById("menu").value = display.join("\n");
 
-        $(document).on('change', 'input', () => {
-            let bodyWidth = document.getElementById("body").style.width;
-            let menuWidth = document.getElementById("menu").style.width;
-            menuWidth = Math.min(Math.max(100, menuWidth), 300)
-            let codeWidth = bodyWidth.slice(0, -2).parseInt() - menuWidth.slice(0, -2).parseInt() - 10
-            document.getElementById("menu").style.width = menuWidth + "px";
-            document.getElementById("code").style.width = codeWidth + "px";
-        }, 10);
-    </script>
+    $(document).on('change', 'input', () => {
+      let bodyWidth = document.getElementById("body").style.width;
+      let menuWidth = document.getElementById("menu").style.width;
+      menuWidth = Math.min(Math.max(100, menuWidth), 300)
+      let codeWidth = bodyWidth.slice(0, -2).parseInt() - menuWidth.slice(0, -2).parseInt() - 10
+      document.getElementById("menu").style.width = menuWidth + "px";
+      document.getElementById("code").style.width = codeWidth + "px";
+    }, 10);
+  </script>
 
 </body>
 
