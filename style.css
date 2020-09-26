@@ -5,6 +5,10 @@
   ) format("truetype");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 800px;
   margin: 0px auto;
@@ -25,6 +29,25 @@ a.language {
   color: #F8FCFF;
   font-size: 24px;
   line-height: normal;
+}
+
+a.language-section {
+  color: #F8FCFF;
+  font-size: 32px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a.section {
+  color: #3E4349;
+  text-decoration: none;
+}
+
+a.label {
+  font: 40px Georgia, serif;
+  color: #F8FCFF;
+  background-color: #C0C6CC;
+  text-decoration: none;
 }
 
 
