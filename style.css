@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'CascadiaCode';
-  src: url(assets/CascadiaMonoPL.ttf) format('truetype');
+  src: url(CascadiaMonoPL.ttf /*tpa=./assets/CascadiaMonoPL.ttf*/) format('truetype');
 }
 
 
@@ -88,7 +88,7 @@ input {
   border-radius: 16px;
   box-shadow: none;
   color: #3e4349;
-  font-size: 32px;
+  font: 32px CascadiaCode;
   outline: 0;
   padding: .5rem 0;
   width: 100%;
