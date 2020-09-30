@@ -1,8 +1,4 @@
-# [PeterHunt's Website](https://peter-hunt.github.io)
-
-## Website of online web tools
-
-Website of online web tools
+# [![1](./assets/peters-website.png)](https://peter-hunt.github.io)
 
 Tools:
 

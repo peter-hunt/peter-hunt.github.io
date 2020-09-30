@@ -1,233 +1,234 @@
+/* Font Importation */
+
 @font-face {
   font-family: 'CascadiaCode';
-  src: url("CascadiaMonoPL.ttf"
-  /*tpa=../../assets/CascadiaMonoPL.ttf*/
-  ) format("truetype");
+  src: url(assets/CascadiaMonoPL.ttf) format('truetype');
+}
+
+
+/* Universal Document Style */
+
+body {
+  background-color: aliceblue;
+  color: #3e4349;
+  font: 32px 'Comic Sans MS';
+  line-height: 140%;
+  margin: 0 auto;
+  width: 800px;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  width: 800px;
-  margin: 0px auto;
-  color: #3E4349;
-  font: 32px "Comic Sans MS";
-  line-height: 140%;
-  background-color: aliceblue;
-}
+
+/* Universal Tag Style */
 
 a,
 span {
-  font: "Comic Sans MS";
-  color: #9FA1A4;
+  color: #9fa1a4;
   line-height: 140%;
 }
 
-a.language {
-  color: #F8FCFF;
+aside {
+  background-color: #3e4349;
   font-size: 24px;
-  line-height: normal;
+  vertical-align: left;
 }
 
-a.language-section {
-  color: #F8FCFF;
-  font-size: 32px;
-  line-height: normal;
-  text-decoration: none;
+blockquote {
+  border-radius: 16px;
+  color: #f8fcff;
 }
 
-a.section {
-  color: #3E4349;
-  text-decoration: none;
+code {
+  color: #3e4349;
+  font: CascadiaCode;
+  font-weight: bold;
+  white-space: pre;
 }
-
-a.label {
-  font: 40px Georgia, serif;
-  color: #F8FCFF;
-  background-color: #C0C6CC;
-  text-decoration: none;
-}
-
-
-/* input {
-    font: 24px "Comic Sans MS";
-    color: #3E4349;
-    vertical-align: middle;
-} */
 
 form {
   margin: 100px;
 }
 
-.input-field {
-  position: relative;
-  width: 250px;
-  height: 44px;
-  line-height: 44px;
+h1 {
+  color: #3e4349;
+  font: bold 80px 'Comic Sans MS';
+  text-align: center;
 }
 
-label {
-  position: absolute;
-  align-items: center;
-  font-size: 20px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: #9FA1A4;
-  transition: 0.2s all;
-  cursor: text;
+h2 {
+  color: #3e4349;
+  font: italic 48px Georgia, serif;
+  text-align: center;
+}
+
+h3 {
+  color: #3e4349;
+  font: 36px 'Comic Sans MS';
+  text-align: center;
+}
+
+h4 {
+  color: #3e4349;
+  font: 28px 'Comic Sans MS';
+  text-align: center;
+}
+
+h5 {
+  color: #3e4349;
+  font: 24px 'Comic Sans MS';
+  text-align: center;
 }
 
 input {
-  font-size: 32px;
-  width: 100%;
   border: 0;
-  outline: 0;
-  padding: 0.5rem 0;
-  border-bottom: 2px solid #9FA1A4;
+  border-bottom: 2px solid #9fa1a4;
+  border-radius: 16px;
   box-shadow: none;
-  color: #3E4349;
+  color: #3e4349;
+  font-size: 32px;
+  outline: 0;
+  padding: .5rem 0;
+  width: 100%;
 }
 
-input:focus,
-input:valid {
-  border-color: #00dd22;
+label {
+  align-items: center;
+  color: #9fa1a4;
+  cursor: text;
+  font-size: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: .2s all;
+  width: 100%;
 }
 
-input:focus~label,
-input:valid~label {
-  font-size: 16px;
-  top: -24px;
-  color: #00dd22;
-}
-
-aside {
-  font: 24px "Comic Sans MS";
-  background-color: #3E4349;
-  vertical-align: left;
-}
-
-textarea {
-  border: 0px;
-  font: CascadiaCode;
-  font-weight: bold;
-  color: #3E4349;
-  overflow: scroll;
+logo {
+  color: #fee101;
+  display: inline;
+  white-space: nowarp;
 }
 
 table,
 th,
 tr,
 td {
-  border: 1px solid #3E4349;
+  border: 1px solid #3e4349;
   border-collapse: collapse;
 }
 
-h1 {
-  font: 80px "Comic Sans MS";
-  color: #3E4349;
-  text-align: center;
-  font-weight: bold;
+textarea {
+  border: 0;
+  color: #3e4349;
+  font: bold CascadiaCode;
+  overflow: scroll;
 }
 
-h2 {
-  font: 48px Georgia, serif;
-  color: #3E4349;
-  font-style: italic;
-  text-align: center;
-}
-
-h3 {
-  font: 36px "Comic Sans MS";
-  color: #3E4349;
-  text-align: center;
-}
-
-h4 {
-  font: 28px "Comic Sans MS";
-  color: #3E4349;
-  text-align: center;
-}
-
-h5 {
-  font: 24px "Comic Sans MS";
-  color: #3E4349;
-  text-align: center;
-}
-
-ul,
 p {
-  font: 32px "Comic Sans MS";
-  color: #3E4349;
+  color: #3e4349;
+  font: 32px 'Comic Sans MS';
 }
 
-p.language {
-  color: #F8FCFF;
+ul {
+  border-radius: 16px;
+  color: #3e4349;
+  font: 32px 'Comic Sans MS';
+}
+
+
+/* Classified Tag Style */
+
+.button {
+  border: none;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font: bold 24px 'Comic Sans MS';
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: .3s;
+  vertical-align: middle;
+}
+
+.get {
+  background-color: #3e4349;
+  color: #fff;
+}
+
+.get:hover {
+  background-color: #1f2124;
+  color: #fff;
+}
+
+.input-field {
+  height: 44px;
+  line-height: 44px;
+  position: relative;
+  width: 250px;
+}
+
+.language {
+  color: #f8fcff;
+  background-color: #3e4349;
   font-size: 24px;
   line-height: normal;
 }
 
-code {
-  font: CascadiaCode;
-  color: #3E4349;
-  white-space: pre;
-  font-weight: bold;
+.question {
+  background-color: #979da4;
+  font-size: 36px;
+  padding: 8px 18px 8px;
 }
 
-blockquote {
-  color: #F8FCFF;
+a.label {
+  background-color: #C0C6CC;
+  color: #f8fcff;
+  font: 40px Georgia, serif;
+  text-decoration: none;
+}
+
+a.language {
+  color: #f8fcff;
+  font-size: 24px;
+  line-height: normal;
+}
+
+a.language-section {
+  color: #f8fcff;
+  font-size: 32px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a.section {
+  color: #3e4349;
+  text-decoration: none;
 }
 
 blockquote.label {
-  margin-left: 0px;
-  font: 40px Georgia, serif;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   background-color: #C0C6CC;
+  font: 40px Georgia, serif;
+  margin-left: 0;
+  padding: 10px 20px 10px;
 }
 
-blockquote.question {
-  padding-left: 18px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 36px;
-  background-color: #979DA4;
+input:focus,
+input:valid {
+  border-color: #0d2;
+}
+
+input:focus~label,
+input:valid~label {
+  color: #0d2;
+  font-size: 16px;
+  top: -24px;
 }
 
 ul.language {
-  color: #F8FCFF;
-  background-color: #3E4349;
-}
-
-.button {
-  font: 24px "Comic Sans MS";
-  font-weight: bold;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  vertical-align: middle
-}
-
-.get {
-  background-color: #3E4349;
-  color: #FFFFFF;
-}
-
-.get:hover {
-  background-color: #1F2124;
-  color: #FFFFFF;
-}
-
-logo {
-  display: inline;
-  color: #FEE101;
-  white-space: nowarp;
+  padding: 20px 0 20px 40px;
 }
