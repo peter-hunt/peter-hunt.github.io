@@ -34,7 +34,6 @@ span {
 aside {
   background-color: #3e4349;
   font-size: 24px;
-  vertical-align: left;
 }
 
 blockquote {
@@ -110,7 +109,7 @@ label {
 logo {
   color: #fee101;
   display: inline;
-  white-space: nowarp;
+  white-space: nowrap;
 }
 
 table,
