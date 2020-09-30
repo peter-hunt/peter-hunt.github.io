@@ -1,4 +1,4 @@
-# [![1](./assets/peters-website.png)](https://peter-hunt.github.io)
+# [![1](./assets/poster.png)](https://peter-hunt.github.io)
 
 Tools:
 
