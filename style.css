@@ -238,3 +238,79 @@ input:valid~label {
 ul.language {
   padding: 20px 0 20px 40px;
 }
+
+
+/* Dropdown Menu */
+
+.dropmenu {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+  background-color: #9fa1a4;
+  border-radius: 8px;
+  color: white;
+  font: 20px 'Comic Sans MS';
+  width: 320px;
+  height: 32px;
+  border: none;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  background-color: #f8fcff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+  font: 16px 'Comic Sans MS';
+  min-width: 320px;
+  position: absolute;
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: #f8fcff;
+  border-radius: 8px;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+  background-color: #3e4349;
+}
