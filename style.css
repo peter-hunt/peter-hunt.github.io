@@ -141,7 +141,7 @@ ul {
 
 /* Classified Tag Style */
 
-.button {
+.download-button .get-button .button {
   border: none;
   border-radius: 16px;
   color: white;
