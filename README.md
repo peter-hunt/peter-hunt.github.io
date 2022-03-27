@@ -3,10 +3,11 @@
 Tools:
 
 - [YouTube Video Downloader](https://peter-hunt.github.io/youtube-downloader) # coming soon!
+- [Twitter Proxy](https://peter-hunt.github.io/twitter-proxy)
 
 ## Implementation
 
-[About us](https://peter-hunt.github.io/about) # coming soon!
+[About us](https://peter-hunt.github.io/about)
 [Making a Donation](https://peter-hunt.github.io/donation)
 
 Click [here](https://peter-hunt.github.io/contract) to contract us!
