@@ -1,66 +1,64 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="YouTube Video Downloader" />
+    <meta name="keywords" content="YouTube Downloader" />
+    <meta name="author" content="Peter Hunt" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="YouTube Video Downloader">
-  <meta name="keywords" content="YouTube Downloader">
-  <meta name="author" content="Peter Hunt">
+    <title>Peter's YouTube Downloader</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
 
-  <title>Peter's YouTube Downloader</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+  <body>
+    <h1>Peter's YouTube Downloader</h1>
 
-  <script src='youtube-downloader.js'></script>
+    <div class="dropmenu" id="dropmenu"></div>
+    <script src="dropmenu.js"></script>
+    <hr />
 
-  <script data-ad-client="ca-pub-6093874313525656" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
+    <center>
+      <h4>
+        Please put the ID of the video you are downloading at the box below.
+      </h4>
+      <h4>
+        <code
+          >"<span title="Exactly 11 characters of a-z, A-Z, 0-9, -, or _"
+            >XXXXXXXXXXX</span
+          >"</code
+        >
+        would be the id of
+        <code>"https://www.youtube.com/watch?v=XXXXXXXXXXX"</code>
+      </h4>
 
-<body>
-  <h1>Peter's YouTube Downloader</h1>
+      <form action="">
+        <div class="input-field">
+          <input
+            id="get-video-id"
+            type="text"
+            style="font: CascadiaCode"
+            required
+          />
+          <label for="get-video-id">Video ID:</label>
+        </div>
+      </form>
 
-  <div class="dropmenu">
-    <div class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <div class="dropdown-content">
-        <a href="/">Home</a>
-        <a href="youtube-downloader.html">YouTube Video Downloader</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <button class="dropbtn">About</button>
-      <div class="dropdown-content">
-        <a href="about.html">About us</a>
-        <a href="donation.html">Making a Donation</a>
-        <a href="contract.html">Contract us</a>
-      </div>
-    </div>
-  </div>
-  <hr>
+      <button id="get-button" class="get-button">Get</button>
+      <br />
 
-  <center>
-    <h4>Please put the ID of the video you are downloading at the box below.</h4>
-    <h4><code>"<span title="Exactly 11 characters of a-z, A-Z, 0-9, -, or _">XXXXXXXXXXX</span>"</code> would be the id of
-      <code>"https://www.youtube.com/watch?v=XXXXXXXXXXX"</code>
-    </h4>
+      <h3 id="alert" style="color: #f7005e"><br /></h3>
 
-    <form action="">
-      <div class="input-field">
-        <input id="get-video-id" type="text" style="font: CascadiaCode" required />
-        <label for="get-video-id">Video ID:</label>
-      </div>
-    </form>
+      <iframe
+        id="preview"
+        width="800"
+        height="600"
+        src="https://www.youtube.com/embed/"
+      ></iframe>
 
-    <button id="get-button" class="get-button">Get</button>
-    <br>
+      <button id="download-button" class="download-button">Download</button>
 
-    <h3 id="alert" style="color: #F7005E"><br></h3>
-
-    <iframe id="preview" width="800" height="600" src="https://www.youtube.com/embed/"></iframe>
-
-    <button id="download-button" class="download-button">Download</button>
-
-  </center>
-</body>
-
+      <script src="youtube-downloader.js"></script>
+    </center>
+  </body>
 </html>

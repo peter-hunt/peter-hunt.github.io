@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Twitter Proxy" />
+    <meta name="keywords" content="Twitter Proxy" />
+    <meta name="author" content="Peter Hunt" />
+
+    <title>Twitter Proxy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Twitter Proxy</h1>
+
+    <div class="dropmenu" id="dropmenu"></div>
+    <script src="dropmenu.js"></script>
+    <hr />
+
+    <h3>Proxy</h3>
+    <h4>Please type the twitter user id below.</h4>
+
+    <form action="">
+      <div class="input-field">
+        <input
+          id="get-user-id"
+          type="text"
+          style="font: CascadiaCode"
+          required
+        />
+        <label for="get-user-id">User ID:</label>
+      </div>
+    </form>
+
+    <button id="get-button" class="get-button">Get</button>
+    <br />
+
+    <h3 id="alert" style="color: #f7005e"><br /></h3>
+
+    <div id="viewer"></div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script>
+
+    <script src="twitter-proxy.js"></script>
+  </body>
+</html>
